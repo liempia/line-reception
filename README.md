@@ -4,7 +4,7 @@
 このプロジェクトは、イベント受付を効率化するためのQRコードを利用した受付システムです。LINEアカウントを用いた受付確認を行い、Google Apps Script（GAS）を利用して受付記録をスプレッドシートに保存します。
 
 現在、システムは以下のURLで運用されています：
-[受付QRコードシステム](https://tampopo256.github.io/gifunity-reception)
+[受付QRコードシステム](https://line-reception.liempia.app/)
 
 ## 機能
 1. **QRコード生成**  
