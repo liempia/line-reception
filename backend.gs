@@ -1,6 +1,6 @@
 const LINE_CHANNEL_ACCESS_TOKEN = 'Unfc4s8DUQUOe3PzlWTUNpHqUkrotyjm.....faf=';
-const EventName = '第1回ふるさと祭り'
-
+const EventName = '第1回ふるさと祭り';
+const EventPrefix = 'event01'
 
 function doPost(e) {
     try {
@@ -17,7 +17,7 @@ function doPost(e) {
                 const messageText = event.message.text;
 
                 // LINE受付
-                if (messageText.slice(0, 4) == "gy11") {
+                if (messageText.slice(0, EventPrefix.len()) == EventPrefix) {
                     let receptionNumber = parseInt(messageText.slice(5), 10);
                     let verificationCode = (receptionNumber * 7 + 3) % 10;
 
